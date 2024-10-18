@@ -1,7 +1,7 @@
 # Rhino2Notion
  Rhino integration with Notion
 
-![Logo](https://example.com/logo.png)
+![Logo](C:\Users\cheng\Documents\Github\Rhino2Notion\img\Thumbnail.png)
 
 A brief description of what my project does and its main features.
 
