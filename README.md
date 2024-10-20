@@ -30,3 +30,19 @@ Make sure you have the following installed:
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
 
+## Usage
+
+1. **Running the Flask App**:
+
+  ```bash
+  python app.py
+
+This will start the Flask app on http://127.0.0.1:5000/, where Grasshopper Hops will send requests.
+
+2. **Setting up Grasshopper Hops**:
+
+In Grasshopper, set up the Hops component to connect to the Flask server. Use the Hops component to pass data to the Python app. The function post_to_notion accepts the following inputs:
+
+<div style="background-color: #e0f7fa; border-left: 5px solid #0288d1; padding: 10px;">
+  This is a box with a blue background and a darker blue left border.
+</div>
