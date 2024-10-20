@@ -38,7 +38,7 @@ You can install the required packages using pip:
 pip install flask ghhops_server requests
 ```
 
-3. **Configure Notion API::**:
+3. **Configure Notion API**:
 - Replace the placeholder values NOTION_TOKEN and DATABASE_ID in the script with your Notion API token and the ID of your target Notion database.
 
 ## Usage
@@ -59,7 +59,55 @@ In Grasshopper, set up the Hops component to connect to the Flask server. Use th
 In Grasshopper, set up the Hops component to connect to the Flask server. Use the Hops component to pass data to the Python app. The function post_to_notion accepts the following inputs:
 
 - **Name**: A list of strings representing the names of items.
-Color: A list of RGB values in the format "255,0,0".
-Number: A list of numbers (as float).
-Tag: A list of strings representing the tags to be assigned to items in Notion.
-Trigger: A boolean value to trigger the post operation. The data is only sent to Notion if this is True.
+- **Color**: A list of RGB values in the format "255,0,0".
+- **Number**: A list of numbers (as float).
+- **Tag**: A list of strings representing the tags to be assigned to items in Notion.
+- **Trigger** : A boolean value to trigger the post operation. The data is only sent to Notion if this is True.
+
+3. **Example Grasshopper Setup**:
+
+In Grasshopper, your setup might look something like this:
+
+- Connect a **Panel** to the Hops inputs for "Name", "Color", "Number", and "Tag".
+- Set up a **Boolean Toggle** for the "Trigger" input.
+- Once the "Trigger" is set to *True*, the function will post the data to the Notion database.
+
+4. **Example Grasshopper Setup**:
+
+- **Name**: ["Item 1", "Item 2"]
+- **Color**: ["255,0,0", "0,255,0"] (Red and Green)
+- **Number**: [100, 200]
+- **Tag**: ["Category 01", "Category 2"]
+- **Trigger**: True
+
+When you trigger the operation, the Flask app will post this data to your Notion database.
+
+5. **Example Notion Database Structure**:
+
+Your Notion database should have the following columns:
+
+- **Name**: A title field.
+- **Color**: A rich text field that accepts LaTeX equations to render colors.
+- **Number**: A number field.
+- **Tag**: A select field with predefined tags.
+
+The Flask app will convert the RGB colors into hex format and render them as a colored LaTeX expression in the Notion database.
+
+6. **Data Formatting and RGB to Hex Conversion**:
+
+The script includes a helper function that converts RGB colors to hex format before posting to the Notion database. The RGB values are passed from Grasshopper as strings (e.g., "255,0,0" for red), and the function converts these values to hex (e.g., "#FF0000").
+
+7. **Handling Trigger Input**:
+
+The operation to post data to Notion only proceeds if the Trigger input is set to True. If the trigger is False, the script does not perform any actions. This allows for controlled posting from Grasshopper when needed.
+
+8. **Notion API Details**:
+
+Make sure you have set up the Notion Integration with a valid API key and have access to your Notion database’s ID. Replace the placeholders in the Python script with your actual NOTION_TOKEN and DATABASE_ID.
+
+9. **Posting to Notion**:
+
+Once the trigger is activated, the data is sent to the Notion API with the following structure:
+
+10. **Example Output**:
+
