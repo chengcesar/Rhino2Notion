@@ -37,6 +37,9 @@ Make sure you have the following installed:
   ```bash
   python app.py
 
+## Usage
+
+
 This will start the Flask app on http://127.0.0.1:5000/, where Grasshopper Hops will send requests.
 
 2. **Setting up Grasshopper Hops**:
