@@ -34,9 +34,9 @@ Make sure you have the following installed:
 2. **Install the required Python packages:**:
 You can install the required packages using pip:
 
-```bash
-pip install flask ghhops_server requests
-```
+    ```bash
+    pip install flask ghhops_server requests
+    ```
 
 3. **Configure Notion API**:
 - Replace the placeholder values NOTION_TOKEN and DATABASE_ID in the script with your Notion API token and the ID of your target Notion database.
@@ -45,10 +45,10 @@ pip install flask ghhops_server requests
 
 1. **Running the Flask App**:
 
-  ```bash
-  python app.py
-  
-  ```
+    ```bash
+    python app.py
+    
+    ```
 
 This will start the Flask app on http://127.0.0.1:5000/, where Grasshopper Hops will send requests.
 
@@ -111,3 +111,4 @@ Once the trigger is activated, the data is sent to the Notion API with the follo
 
 10. **Example Output**:
 
+![img](/img/Landscape_template1920x1080-Shapes2_1.gif)
