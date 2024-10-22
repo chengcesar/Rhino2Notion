@@ -113,7 +113,8 @@ Once the trigger is activated, the data is sent to the Notion API with the follo
 
 ![img](/img/Landscape_template1920x1080-Shapes2_1.gif)
 
-**USE CASES**:
+## USE CASES:
+
 ![img](/img/GIF-r2n.gif)
 
 - **Architectural Design Documentation:** Interactive documents allow architects and stakeholders to review 3D models and design elements in real-time, enabling them to filter geometry by attributes such as material, area, and volume. Stakeholders can visualize specific parts of a design or compare alternative solutions instantly, with the ability to sort and filter data directly in Notion.
