@@ -112,3 +112,11 @@ Once the trigger is activated, the data is sent to the Notion API with the follo
 10. **Example Output**:
 
 ![img](/img/Landscape_template1920x1080-Shapes2_1.gif)
+
+**USE CASES**:
+![img](/img/GIF-r2n.gif)
+
+- **Architectural Design Documentation:** Interactive documents allow architects and stakeholders to review 3D models and design elements in real-time, enabling them to filter geometry by attributes such as material, area, and volume. Stakeholders can visualize specific parts of a design or compare alternative solutions instantly, with the ability to sort and filter data directly in Notion.
+- **Product Development & Iteration:** Design teams working on product development can use interactive documents to track and store parametric data like dimensions, materials, and part counts. As the product evolves, the document dynamically updates, allowing teams to create custom charts that analyze changes over time and ensure the product meets design specifications.
+- **Urban Planning Data Collaboration:** For city planners and urban designers, interactive documents centralize vast amounts of data, such as zoning information, building heights, or environmental impacts. Through Notion's filtering and sorting capabilities, teams can create dashboards that highlight key metrics for each city zone, making it easier to communicate data-driven decisions to public officials or community stakeholders.
+- **Client & Stakeholder Reporting:** Instead of delivering static reports, firms can provide clients with interactive documents that give them the power to sort, filter, and even edit information on their projects. For example, clients can review cost breakdowns, material selections, and project timelines in a fully interactive format, fostering greater transparency and collaboration.
