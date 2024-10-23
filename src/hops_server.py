@@ -35,8 +35,8 @@ def post_list_to_notion(name, color, trigger):
         return "Trigger is False. No data posted to Notion."
 
     # Notion API details
-    NOTION_TOKEN = "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"
-    DATABASE_ID = "123e89ff28f28006aa53f98e854fa2d6"
+    NOTION_TOKEN = {YOUR API KEY}
+    DATABASE_ID = {YOUR DATABASE  ID}
 
     # Define the headers for the Notion API request
     headers = {
